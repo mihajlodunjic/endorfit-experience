@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { Hero } from "@/components/Hero";
-import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
 import gym1 from "@/assets/gym-1.png";
 import gym2 from "@/assets/gym-2.png";
@@ -32,9 +30,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-      
+    <>
       <Hero
         image={gym1}
         title="ENDORFIT GYM"
@@ -270,9 +266,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 
