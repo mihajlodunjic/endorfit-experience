@@ -9,15 +9,13 @@ export const Footer = () => {
           {/* Logo & Brand */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <img src={logo} alt="Endorfit Gym" className="h-10 w-10" />
+              <img src={logo} alt="Endorfit Gym" className="h-10 w-10 rounded-full" />
               <span className="text-lg font-bold">
                 <span className="text-primary">ENDORFIT</span>
                 <span className="text-foreground ml-2">GYM</span>
               </span>
             </div>
-            <p className="text-sm text-muted-foreground">
-              Personalni fitnes centar na Zvezdari
-            </p>
+            <p className="text-sm text-muted-foreground">Personalni fitnes centar na Zvezdari</p>
           </div>
 
           {/* Navigation Links */}
