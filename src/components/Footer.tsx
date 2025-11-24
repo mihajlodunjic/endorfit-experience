@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
-
 export const Footer = () => {
-  return (
-    <footer className="bg-card border-t border-border mt-20">
+  return <footer className="bg-card border-t border-border mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo & Brand */}
@@ -15,7 +13,7 @@ export const Footer = () => {
                 <span className="text-foreground ml-2">GYM</span>
               </span>
             </div>
-            <p className="text-sm text-muted-foreground">Personalni fitnes centar na Zvezdari</p>
+            <p className="text-sm text-muted-foreground">Fitnes centar na Zvezdari</p>
           </div>
 
           {/* Navigation Links */}
@@ -58,6 +56,5 @@ export const Footer = () => {
           <p>© {new Date().getFullYear()} Endorfit Gym. Sva prava zadržana.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
