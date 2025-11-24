@@ -34,7 +34,7 @@ const Index = () => {
       <Hero
         image={gym1}
         title="ENDORFIT GYM"
-        subtitle="Personalni fitnes centar na Zvezdari"
+        subtitle="Fitnes centar na Zvezdari"
         height="full"
       />
 
