@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { Hero } from "@/components/Hero";
-import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
 import gym2 from "@/assets/gym-2.png";
 import gym1 from "@/assets/gym-1.png";
 import { Heart, Shield, Award, Clock } from "lucide-react";
@@ -31,8 +29,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <>
       
       <Hero
         image={gym2}
@@ -197,9 +194,7 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 
