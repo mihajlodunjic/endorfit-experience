@@ -23,7 +23,11 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <img src={logo} alt="Endorfit Gym" className="h-10 w-10 transition-transform group-hover:scale-110" />
+            <img
+              src={logo}
+              alt="Endorfit Gym"
+              className="h-10 w-10 transition-transform group-hover:scale-110 rounded-full"
+            />
             <span className="text-xl font-bold tracking-tight">
               <span className="text-primary">ENDORFIT</span>
               <span className="text-foreground ml-2">GYM</span>
@@ -37,9 +41,7 @@ export const Navigation = () => {
                 key={item.path}
                 to={item.path}
                 className={`text-sm font-medium transition-colors relative py-2 ${
-                  location.pathname === item.path
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
+                  location.pathname === item.path ? "text-primary" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {item.label}
@@ -80,9 +82,7 @@ export const Navigation = () => {
                   to={item.path}
                   onClick={() => setIsOpen(false)}
                   className={`text-base font-medium py-2 transition-colors ${
-                    location.pathname === item.path
-                      ? "text-primary"
-                      : "text-muted-foreground hover:text-foreground"
+                    location.pathname === item.path ? "text-primary" : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {item.label}
