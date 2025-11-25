@@ -22,7 +22,7 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <div className="flex items-center gap-3 group cursor-default">
             <img
               src={logo}
               alt="Endorfit Gym"
@@ -32,15 +32,14 @@ export const Navigation = () => {
               <span className="text-primary">ENDORFIT</span>
               <span className="text-foreground ml-2">GYM</span>
             </span>
-          </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link
+              <span
                 key={item.path}
-                to={item.path}
-                className={`text-sm font-medium transition-colors relative py-2 ${
+                className={`text-sm font-medium transition-colors relative py-2 cursor-default ${
                   location.pathname === item.path ? "text-primary" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -52,7 +51,7 @@ export const Navigation = () => {
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
-              </Link>
+              </span>
             ))}
           </div>
 
@@ -77,16 +76,15 @@ export const Navigation = () => {
           >
             <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
               {navItems.map((item) => (
-                <Link
+                <span
                   key={item.path}
-                  to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`text-base font-medium py-2 transition-colors ${
+                  className={`text-base font-medium py-2 transition-colors cursor-default ${
                     location.pathname === item.path ? "text-primary" : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {item.label}
-                </Link>
+                </span>
               ))}
             </div>
           </motion.div>
