@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 export const Footer = () => {
   return <footer className="bg-card border-t border-border mt-20">
@@ -20,24 +19,24 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Navigacija</h4>
             <div className="flex flex-col gap-2">
-              <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-default">
                 Početna
-              </Link>
-              <Link to="/o-nama" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              </span>
+              <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-default">
                 O nama
-              </Link>
-              <Link to="/usluge" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              </span>
+              <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-default">
                 Usluge
-              </Link>
-              <Link to="/treneri" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              </span>
+              <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-default">
                 Treneri
-              </Link>
-              <Link to="/galerija" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              </span>
+              <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-default">
                 Galerija
-              </Link>
-              <Link to="/lokacija" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              </span>
+              <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-default">
                 Lokacija
-              </Link>
+              </span>
             </div>
           </div>
 

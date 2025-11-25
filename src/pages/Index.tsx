@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Hero } from "@/components/Hero";
-import { Link } from "react-router-dom";
 import gym1 from "@/assets/gym-1.png";
 import gym2 from "@/assets/gym-2.png";
 import { Dumbbell, Users, Target, Sparkles } from "lucide-react";
@@ -101,12 +100,11 @@ const Index = () => {
                 Ovo nije mesto gužve i haosa. Ovo je vaš miran, čist i profesionalan prostor 
                 gde možete raditi na sebi bez ometanja.
               </p>
-              <Link
-                to="/o-nama"
-                className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+              <span
+                className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors cursor-default"
               >
                 Saznaj više
-              </Link>
+              </span>
             </motion.div>
 
             <motion.div
@@ -179,12 +177,11 @@ const Index = () => {
           </div>
 
           <div className="text-center">
-            <Link
-              to="/usluge"
-              className="inline-block px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/80 transition-colors"
+            <span
+              className="inline-block px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/80 transition-colors cursor-default"
             >
               Pogledaj sve usluge
-            </Link>
+            </span>
           </div>
         </div>
       </section>
@@ -205,12 +202,11 @@ const Index = () => {
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
               Naš tim čine sertifikovani treneri sa godinama iskustva u radu sa klijentima različitih nivoa i ciljeva
             </p>
-            <Link
-              to="/treneri"
-              className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            <span
+              className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors cursor-default"
             >
               Pogledaj naš tim
-            </Link>
+            </span>
           </motion.div>
         </div>
       </section>
@@ -257,12 +253,11 @@ const Index = () => {
           </div>
 
           <div className="text-center">
-            <Link
-              to="/galerija"
-              className="inline-block px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/80 transition-colors"
+            <span
+              className="inline-block px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/80 transition-colors cursor-default"
             >
               Vidi celu galeriju
-            </Link>
+            </span>
           </div>
         </div>
       </section>
